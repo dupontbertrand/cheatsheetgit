@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cheat Sheet HTML5</title>
+  <link rel="icon" href="favicon.ico" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <!-- My css -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav>
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#">Accueil</a>
+          </li>
+          <li>
+            <a href="http://dupontbertrand.github.io/cheatsheethtml/">HTML</a>
+          </li>
+          <li>
+            <a href="http://dupontbertrand.github.io/cheatsheetcss/">CSS</a>
+          </li>
+          <li>
+            <a href="http://dupontbertrand.github.io/cheatsheetemmet/">Emmet</a>
+          </li>
+          <li>
+            <a href="#">Terminal</a>
+          </li>
+          <li>
+            <a href="#">Ubuntu</a>
+          </li>
+          <li>
+            <a href="#">ATOM</a>
+          </li>
+          <li>
+            <a href="#">GIT et GITHUB</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <header>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <img id="logo" src="img/logohtml.png" alt="logo html" />
+              <img id="logoroubaix" src="img/logo-roubaix.png" alt="logo roubaix" class="center-block" />
+              <div class="clear"></div>
+              <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+              <!-- <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="firstjumbo">
+          <h1>Cheat Sheet GIT et GITHUB</h1>
+          <p>Retrouvez ici les principes de base</p>
+          <!-- Bouton -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              En savoir plus
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/memento-des-balises-html#r-1608356">OpenClassrooms</a></li>
+              <li><a href="https://www.codecademy.com/fr/learn/web">Codeacademy</a></li>
+              <li><a href="http://www.w3schools.com/html/">W3C</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- /Bouton -->
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2> Général : </h2>
+
+            			<ul>
+            				<li> git init : Initialiser git dans un nouveau dossier </li>
+
+            				<li> git log + nom du fichier : Permet de voir les changements dans un fichier </li>
+
+            				<li>git status : Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</li>
+
+            				<li>git diff : Montre les modifications de fichier</li>
+
+            				<li>git add : Ajoute un instantané du fichier, en préparation pour le suivi de version</li>
+            			</ul>
+
+            			<ul>
+
+
+            				<li> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes : </li>
+
+            				<li>git add + nom du fichier</li>
+            				<li>git commit -m "Commentaire"</li>
+            				<li>git push </li>
+            			</ul>
+            			<ul>
+
+            				<li>Si l'on veut supprimer un fichier :</li>
+
+            				<li> git rm index.html</li>
+            				<li> git commit -m "Suppression"</li>
+            				<li> git push</li>
+
+            			</ul>
+                  <h4>Changement au niveau des noms de fichiers :</h4>
+
+                  ​
+
+                  <ul>
+
+                    <li>git rm = Supprime le fichier du répertoire de travail et met a jour l'index.</li>
+
+                    <li>git mv = Renomme le fichier et prépare le changement pour un commit.</li>
+
+                  </ul>
+          <div class="col-md-8">
+
+            <h2 id="GITHUB">GITHUB</h2>
+
+      			​
+
+      			<ul>
+
+      				<li>git branch = Liste toutes les branches locales dans le dépôt courant.</li>
+
+      				<li>git branch + nom de la branche = Crée une nouvelle branche.</li>
+
+      				<li>git checkout + nom de la branche = Bascule sur la branche </li>
+
+      				<li>git branch -d nom de la branche = Supprime la branche spécifiée.</li>
+
+      				<li> Lors de la création du repos, laisser le profil en "Public" et la license en "None" Mettre le même nom pour le repos ET le dossier local (
+      					<strong> Pour ne pas s'embrouiller </strong>) </li>
+
+      			</ul>
+
+          </div>
+          <div class="col-md-8">
+
+            <ol>
+
+      				<li>Créer le dossier local et
+      					<strong>faire le git init</strong>. </li>
+      				<li>touch index.html</li>
+      				<li>touch .gitignore</li>
+      				<li>git add *</li>
+      				<li>git commit -m "First commit" </li>
+      			</ol>
+      			<h3>GITHUB</h3>
+      			<ol>
+      				<li> New repository </li>
+      				<li>
+      					<strong>Même nom</strong> que le dossier local </li>
+      				<li> Public et no license </li>
+      				<li> Copier la ligne "git remote..."</li>
+      			</ol>
+      			<h3>TERMINAL</h3>
+      			<ol>
+      				<li>Coller la ligne </li>
+      				<li>git push -u origin master</li>
+      				<li>(A ce moment là, rafraichir la page GITHUB, le index.html et le .gitignore doivent être affichés)</li>
+
+      			</ol>
+
+      			<h5> Si on veut mettre sur GithubPages (en vrac) : </h5>
+
+      			<ul>
+      				<li>atom .</li>
+      				<li>Modifier son index.html</li>
+      				<li>Sur github :</li>
+      			</ul>
+      			<ol>
+      				<li>Au dessus des fichiers cliquer sur master pour créer la branche
+      					<strong>gh-pages</strong>
+      				</li>
+      				<li>Settings</li>
+      				<li>Branches</li>
+      				<li>Changer la default par "gh-pages"</li>
+      			</ol>
+      			<h3>Dans le terminal :</h3>
+      			<ol>
+      				<li>git branch gh-pages</li>
+      				<li>git checkout gh-pages</li>
+      				<li>git status</li>
+      			</ol>
+      			<ul>
+      				<li>Atom ou terminal : Add+Commit+Push</li>
+      				<li>Repo/Settings/URL</li>
+      			</ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="https://www.facebook.com/dupont.bertrand.profil"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/Ber_n3xt"><i class="fa fa-twitter"></i></a>
+        <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+        <a href="https://github.com/dupontbertrand"><i class="fa fa-github"></i></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a href="#">Accueil</a> ·
+          <a href="http://simplon.co/">Simplon</a> ·
+          <!-- <a href="#"></a>
+                ·
+                <a href="#">A propos</a>
+                ·
+                <a href="#">Faq</a> -->
+          <!-- · -->
+          <a href="#">Contact</a>
+        </p>
+
+        <p> Copyright&copy; rien du tout.</p>
+      </div>
+
+    </footer>
+
+
+    <!-- /#page-content-wrapper -->
+
+    <!-- /#wrapper -->
+  </div>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
