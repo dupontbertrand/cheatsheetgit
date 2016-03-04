@@ -3,6 +3,11 @@
 	height: auto;
 }
 
+.contentonjumbotron {
+  text-align: center;
+  font-size: 120%;
+}
+
 section a {
   margin-left: 5%;
 }
