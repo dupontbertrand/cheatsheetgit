@@ -113,140 +113,149 @@
       </div>
     </div>
     <div class="jumbotron">
-    <div class="contentonjumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> Général : </h2>
+      <div class="contentonjumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2> Général : </h2>
 
-            			<ul>
-            				<li> git init : Initialiser git dans un nouveau dossier </li>
+              <p>Git est un outil de versionning, GitHub permet une sauvegarde en ligne et de le partager si on le souhaite.</p>
 
-            				<li> git log + nom du fichier : Permet de voir les changements dans un fichier </li>
+              <h2 id="titlegen">GIT et GITHUB</h2>
 
-            				<li>git status : Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</li>
+              <ul>
+                <li> git init : Initialiser git dans un nouveau dossier </li>
 
-            				<li>git diff : Montre les modifications de fichier</li>
+                <li> git log + nom du fichier : Permet de voir les changements dans un fichier </li>
 
-            				<li>git add : Ajoute un instantané du fichier, en préparation pour le suivi de version</li>
-            			</ul>
+                <li>git status : Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</li>
 
-            			<ul>
+                <li>git diff : Montre les modifications de fichier</li>
 
+                <li>git add : Ajoute un instantané du fichier, en préparation pour le suivi de version</li>
+              </ul>
 
-            				<li> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes : </li>
-
-            				<li>git add + nom du fichier</li>
-            				<li>git commit -m "Commentaire"</li>
-            				<li>git push </li>
-            			</ul>
-            			<ul>
-
-            				<li>Si l'on veut supprimer un fichier :</li>
-
-            				<li> git rm index.html</li>
-            				<li> git commit -m "Suppression"</li>
-            				<li> git push</li>
-
-            			</ul>
-                  <h4>Changement au niveau des noms de fichiers :</h4>
-
-                  ​
-
-                  <ul>
-
-                    <li>git rm = Supprime le fichier du répertoire de travail et met a jour l'index.</li>
-
-                    <li>git mv = Renomme le fichier et prépare le changement pour un commit.</li>
-
-                  </ul>
-          <div class="col-md-12">
+              <ul>
 
 
+                <li> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes : </li>
 
-            <h2 id="GITHUB">GITHUB</h2>
+                <li>git add + nom du fichier</li>
+                <li>git add -A permettra de add tous les fichiers</li>
+                <li>git commit -m "Commentaire"</li>
+                <li>git push </li>
+              </ul>
+              <ul>
 
-      			​
+                <li>Si l'on veut supprimer un fichier :</li>
 
-      			<ul>
+                <li> git rm index.html</li>
+                <li> git commit -m "Suppression"</li>
+                <li> git push</li>
 
-      				<li>git branch = Liste toutes les branches locales dans le dépôt courant.</li>
+              </ul>
+              <h4>Changement au niveau des noms de fichiers :</h4>
 
-      				<li>git branch + nom de la branche = Crée une nouvelle branche.</li>
+              ​
 
-      				<li>git checkout + nom de la branche = Bascule sur la branche </li>
+              <ul>
 
-      				<li>git branch -d nom de la branche = Supprime la branche spécifiée.</li>
+                <li>git rm = Supprime le fichier du répertoire de travail.</li>
 
-      				<li> Lors de la création du repos, laisser le profil en "Public" et la license en "None" (sauf si vous désirez autre chose bien sûr,s elon votre projet) Mettre le même nom pour le repos ET le dossier local (
-      					<strong> Pour ne pas s'embrouiller entre les doss locaux et les repos c'est préférablee au début </strong>) </li>
+                <li>git mv = Renomme le fichier et prépare le changement pour un commit.</li>
 
-      			</ul>
+              </ul>
+              <div class="col-md-12">
 
+
+
+
+
+                ​
+
+                <ul>
+
+                  <li>git branch = Liste toutes les branches locales dans le dépôt courant.</li>
+
+                  <li>git branch + nom de la branche = Crée une nouvelle branche.</li>
+
+                  <li>git checkout + nom de la branche = Bascule sur la branche </li>
+
+                  <li>git branch -d nom de la branche = Supprime la branche spécifiée.</li>
+
+                  <li> Lors de la création du repos, laisser le profil en "Public" et la license en "None" (sauf si vous désirez autre chose bien sûr,s elon votre projet) Mettre le même nom pour le repos ET le dossier local (
+                    <strong> Pour ne pas s'embrouiller entre les doss locaux et les repos c'est préférablee au début </strong>) </li>
+
+                </ul>
+
+              </div>
+              <div class="col-md-12">
+
+                <ol>
+
+<h2>Faire un nouveau projet</h2>
+
+                  <li>Créer le dossier local et
+                    <strong>faire le git init</strong>. </li>
+                  <li>mkdir projet</li>
+                  <li>cd projet</li>
+                  <li>touch index.html</li>
+                  <li>touch .gitignore</li>
+                  <li>git add *</li>
+                  <li>git commit -m "First commit" </li>
+                </ol>
+
+
+
+                <h3>GITHUB</h3>
+                <ol>
+                  <li> New repository </li>
+                  <li>
+                    <strong>Même nom</strong> que le dossier local </li>
+                  <li> Public et no license </li>
+                  <li> Copier la ligne "git remote..."</li>
+                </ol>
+
+
+                <h3>TERMINAL</h3>
+                <ol>
+                  <li>Coller la ligne </li>
+                  <li>git push -u origin master</li>
+                  <li>(A ce moment là, rafraichir la page GITHUB, le index.html et le .gitignore doivent être affichés)</li>
+
+                </ol>
+
+                <h5> Si on veut mettre sur GithubPages (en vrac) : </h5>
+
+                <ul>
+                  <li>atom .</li>
+                  <li>Modifier son index.html</li>
+                  <li>Sur github :</li>
+                </ul>
+                <ol>
+                  <li>Au dessus des fichiers cliquer sur master pour créer la branche
+                    <strong>gh-pages</strong>
+                  </li>
+                  <li>Settings</li>
+                  <li>Branchs</li>
+                  <li>Changer la default par "gh-pages"</li>
+                </ol>
+                <h3>Dans le terminal :</h3>
+                <ol>
+                  <li>git branch gh-pages</li>
+                  <li>git checkout gh-pages</li>
+                  <li>git status</li>
+                </ol>
+                <ul>
+                  <li>Atom ou terminal : Add+Commit+Push</li>
+                  <li>Repo/Settings/URL</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-md-12">
-
-            <ol>
-
-      				<li>Créer le dossier local et
-      					<strong>faire le git init</strong>. </li>
-      				<li>touch index.html</li>
-      				<li>touch .gitignore</li>
-      				<li>git add *</li>
-      				<li>git commit -m "First commit" </li>
-      			</ol>
-
-
-
-      			<h3>GITHUB</h3>
-      			<ol>
-      				<li> New repository </li>
-      				<li>
-      					<strong>Même nom</strong> que le dossier local </li>
-      				<li> Public et no license </li>
-      				<li> Copier la ligne "git remote..."</li>
-      			</ol>
-
-
-      			<h3>TERMINAL</h3>
-      			<ol>
-      				<li>Coller la ligne </li>
-      				<li>git push -u origin master</li>
-      				<li>(A ce moment là, rafraichir la page GITHUB, le index.html et le .gitignore doivent être affichés)</li>
-
-      			</ol>
-
-      			<h5> Si on veut mettre sur GithubPages (en vrac) : </h5>
-
-      			<ul>
-      				<li>atom .</li>
-      				<li>Modifier son index.html</li>
-      				<li>Sur github :</li>
-      			</ul>
-      			<ol>
-      				<li>Au dessus des fichiers cliquer sur master pour créer la branche
-      					<strong>gh-pages</strong>
-      				</li>
-      				<li>Settings</li>
-      				<li>Branches</li>
-      				<li>Changer la default par "gh-pages"</li>
-      			</ol>
-      			<h3>Dans le terminal :</h3>
-      			<ol>
-      				<li>git branch gh-pages</li>
-      				<li>git checkout gh-pages</li>
-      				<li>git status</li>
-      			</ol>
-      			<ul>
-      				<li>Atom ou terminal : Add+Commit+Push</li>
-      				<li>Repo/Settings/URL</li>
-      			</ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
     <footer class="footer-distributed">
 
       <div class="footer-right">
